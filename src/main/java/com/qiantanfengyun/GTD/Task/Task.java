@@ -5,18 +5,19 @@ import javax.persistence.Id;
 
 @Entity
 public class Task {
+
     @Id
-    private String id;
+    private String uuid;
     private String title;
-    private String status;
+    private boolean completed;
     private boolean deleted;
 
-    public String getId() {
-        return id;
+    public String getUuid() {
+        return uuid;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
     }
 
     public String getTitle() {
@@ -27,12 +28,12 @@ public class Task {
         this.title = title;
     }
 
-    public String getStatus() {
-        return status;
+    public boolean isCompleted() {
+        return completed;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 
     public boolean isDeleted() {

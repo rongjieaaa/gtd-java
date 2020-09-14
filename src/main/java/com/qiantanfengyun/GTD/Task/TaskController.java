@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/task")
+@CrossOrigin("http://localhost:8081")
 public class TaskController {
 
     @Autowired
